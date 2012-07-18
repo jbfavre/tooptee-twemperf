@@ -1,0 +1,18 @@
+Source: twemperf
+Maintainer: Jean Baptiste Favre <jbfavre@dotbuntu.org>
+Section: net
+Priority: optional
+Standards-Version: 0.1.16
+Build-Depends: debhelper (>= 7.4.15),
+               build-essential,
+               dh-autoreconf,
+               hardening-wrapper
+
+Package: twemperf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Twemperf (pronounced "two-em-perf"), aka mcperf
+ is a tool for measuring memcached server performance.
+ mcperf is like httperf, but for memcached protocol.
+ It speaks memcached ASCII protocol and is capable of
+ generating connections and requests at a high rate.
